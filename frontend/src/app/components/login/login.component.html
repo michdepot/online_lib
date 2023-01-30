@@ -1,0 +1,83 @@
+<!-- <div class="col-8">
+  <div class="card">
+    <div class="card-header">Login Here</div>
+      <div class="card-body">
+        <form #loginForm="ngForm" (ngSubmit)="submitLogin()">
+          <div class="alert alert-danger" [hidden]="!error">
+            {{error}}
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" [(ngModel)]="form.email" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" [(ngModel)]="form.password" required>
+          </div> -->
+            <!-- <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div> -->
+          <!-- <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Submit</button>
+        </form>
+      </div>
+  </div>
+</div> -->
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<div class="background">
+<section class="vh-90">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col col-xl-10">
+        <div class="card" style="border-radius: 1rem;">
+          <div class="row g-0">
+            <div class="col-md-6 col-lg-5 d-none d-md-block">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/img1.webp"
+                alt="login form" class="img-fluid" style="border-radius: 1rem 0 0 1rem;" />
+            </div>
+            <div class="col-md-6 col-lg-7 d-flex align-items-center">
+              <div class="card-body p-4 p-lg-5 text-black">
+
+                <form #loginForm="ngForm" (ngSubmit)="submitLogin()">
+
+                  <div class="d-flex align-items-center mb-3 pb-1">
+                    <i class="fa-duotone fa-books"></i>
+                    <span class="h1 fw-bold mb-0 logo">onLib</span>
+                  </div>
+
+                  <h5 class="fw-normal mb-3 pb-3" style="letter-spacing: 1px;">Sign into your account</h5>
+
+                  <div class="form-outline mb-4">
+                    <input type="email" id="email" name="email" required class="form-control form-control-lg" [(ngModel)]="form.email"/>
+                    <label class="form-label" for="email">Email address</label>
+                  </div>
+
+                  <div class="form-outline mb-4">
+                    <input type="password" class="form-control form-control-lg" id="password" name="password" [(ngModel)]="form.password" required>
+                    <label for="password" class="form-label">Password</label>
+                  </div>
+
+                  <div class="pt-1 mb-4">
+                    <button class="btn btn-dark btn-lg btn-block submit" type="submit" [disabled]="!loginForm.valid">Login</button>
+                  </div>
+
+                  <a class="small text-muted" href="#!">Forgot password?</a>
+                  <div>
+                    <a href="#!" class="small text-muted">Terms of use.</a>
+                    <a href="#!" class="small text-muted">Privacy policy</a>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</div>

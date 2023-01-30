@@ -1,0 +1,24 @@
+.logo{
+  font-family: 'Fredoka';
+  font-weight: 600;
+  font-size: 30px;
+  color: #785d50;
+}
+
+.links a{
+  color: #785d50;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.links a:hover{
+  color: #a38f85;
+  transition: .4s;
+}
+
+nav{
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+

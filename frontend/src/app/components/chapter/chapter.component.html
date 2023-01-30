@@ -1,0 +1,12 @@
+<div class="container">
+  <div class="text-right">
+    <a routerLink="chaptercontent" class="btn btn-primary">+ Add Chapter</a>
+  </div>
+  <div class="text-center p-4" *ngFor="let Chapter of ChapterArray">
+    <h2>{{Chapter.title}}</h2>
+    <p>{{Chapter.content}}</p>
+
+    <button type="submit" class="btn btn-primary btn-block mb-4">Delete</button> &nbsp;&nbsp; <button type="submit" class="btn btn-primary btn-block mb-4">Edit</button>
+  </div>
+</div>
+

@@ -1,0 +1,19 @@
+<div class="container">
+  <form #chaptercontentForm="ngForm" *ngIf="book_id" (ngSubmit)="addChapter(book_id)">
+    <!-- (ngSubmit)="addChapter(book.id)" -->
+    <!-- Title input -->
+    <div class="form-outline mb-4">
+      <input placeholder="Title" type="text" id="title" name="title" class="form-control" [(ngModel)]="form.title" required/>
+    </div>
+
+    <!-- Description input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="content">Content</label>
+      <textarea class="form-control" id="content" rows="4" name="content" [(ngModel)]="form.content" required></textarea>
+    </div>
+
+    <!-- Submit button -->
+    <button type="submit" class="btn btn-primary btn-block mb-4">Add Chapter</button>
+  </form>
+</div>
+

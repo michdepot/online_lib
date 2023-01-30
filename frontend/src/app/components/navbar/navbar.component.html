@@ -1,0 +1,16 @@
+<nav class="navbar bg-body-tertiary navbar-fixed-top"  style="background-color: #e7d7c9;">
+  <div class="container-fluid col-md-10">
+    <a class="navbar-brand logo">onLib</a>
+
+    <div class="links">
+      <a routerLink="login" class="navbar-brand" *ngIf="!loggedIn">Login</a>
+      <a routerLink="signup" class="navbar-brand" *ngIf="!loggedIn">Signup</a>
+      <a routerLink="library" class="navbar-brand" *ngIf="loggedIn">Library</a>
+      <a routerLink="profile" class="navbar-brand" *ngIf="loggedIn">Profile</a>
+
+      <a routerLink="write" class="navbar-brand" *ngIf="loggedIn">Write</a>
+      <a routerLink="stories" class="navbar-brand" *ngIf="loggedIn">My Stories</a>
+      <a href="#" (click)="logout($event)" class="navbar-brand" *ngIf="loggedIn">Logout</a>
+    </div>
+  </div>
+</nav>

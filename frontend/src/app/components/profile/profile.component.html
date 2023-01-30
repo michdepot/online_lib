@@ -1,0 +1,39 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let BookItem of BookArray">
+      <th scope="row">{{BookItem.id}}</th>
+      <td>{{BookItem.title}}</td>
+      <td>{{BookItem.description}}</td>
+      <td><button type="button" class="btn btn-primary" (click)="addBook(BookItem.id)">+</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="container">
+  
+    <div class="card" style="width: 15rem;" *ngFor="let BookItem of BookArray">
+      <form (ngSubmit)="addBook(BookItem.id)">
+        <img
+          src="https://marketplace.canva.com/EAFFEs6P168/1/0/1003w/canva-orange-green-watercolor-soft-cute-cartoon-love-romance-book-cover-5Zk2VM0-EAc.jpg"
+          class="card-img-top" alt="...">
+        <div class="card-body">
+          <h3>{{BookItem.title}}</h3>
+          <!-- <p class="card-text">{{BookItem.description}}</p> -->
+          <p class="card-text">Author Name</p>
+          <h6>Category</h6>
+          <button type="button" class="btn btn-primary">See more</button> &nbsp;&nbsp; <button type="button" class="btn btn-primary" (click)="addBook(BookItem.id)">+</button>
+        </div>
+      </form>
+    </div>
+</div>
+
+
+
