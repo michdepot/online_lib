@@ -22,7 +22,3 @@ class CORS
         return $next($request);
     }
 };
-
-// payload(token:any){
-
-// };
